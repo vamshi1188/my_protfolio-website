@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saivamshi Kottam - Software Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // or 'media'
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Roboto Mono', 'monospace'],
+            },
+            colors: {
+              'primary': {
+                light: '#60a5fa', // blue-400
+                DEFAULT: '#3b82f6', // blue-500
+                dark: '#2563eb', // blue-600
+              },
+              'secondary': '#10b981', // emerald-500
+              'background': '#111827', // gray-900
+              'surface': '#1f2937',   // gray-800
+              'on-surface': '#d1d5db', // gray-300
+              'on-surface-muted': '#9ca3af', // gray-400
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* For custom scrollbar (optional) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1f2937; /* gray-800 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6; /* blue-500 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563eb; /* blue-600 */
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+</head>
+<body class="bg-background text-on-surface antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
