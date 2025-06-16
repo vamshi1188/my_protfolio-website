@@ -82,5 +82,53 @@
 <body class="bg-background text-on-surface antialiased">
     <div id="root"></div>
     <script type="module" src="./index.tsx"></script>
+
+    <section id="certifications" class="py-16 bg-surface">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">Certifications</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- GitHub Foundation Badge -->
+          <div class="bg-background p-6 rounded-lg shadow-lg flex flex-col items-center">
+            <h3 class="text-xl font-semibold mb-4">GitHub Foundations</h3>
+            <div 
+              data-iframe-width="150" 
+              data-iframe-height="270" 
+              data-share-badge-id="77e4f79f-f363-45a7-ac21-f7e406b0f486" 
+              data-share-badge-host="https://www.credly.com">
+            </div>
+            <p class="mt-4 text-on-surface-muted text-center">
+              Validated expertise in GitHub fundamentals and collaborative development workflows.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add this at the end of the body -->
+    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+    <!-- Social Media Section -->
+    <footer class="py-8 bg-background">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="text-xl font-semibold mb-4">Connect With Me</h2>
+          <div class="flex space-x-4">
+            <!-- Twitter/X Link -->
+            <a href="https://x.com/saivamshi_88" target="_blank" rel="noopener noreferrer" 
+               class="flex items-center p-2 rounded-full bg-surface hover:bg-primary transition-colors duration-300"
+               aria-label="Twitter Profile">
+              <!-- X/Twitter SVG Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-on-surface">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+              <span class="ml-2">@saivamshi_88</span>
+            </a>
+            
+            <!-- You can add more social links here following the same pattern -->
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
