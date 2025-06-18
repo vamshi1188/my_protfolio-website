@@ -1,116 +1,151 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html class="no-js ss-preload" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Security headers -->
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
-    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-    
-    <title>Saivamshi Kottam - Software Developer Portfolio</title>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./index.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind Configuration -->
-    <script>
-      tailwind.config = {
-        darkMode: 'class', // or 'media'
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              mono: ['Roboto Mono', 'monospace'],
-            },
-            colors: {
-              'primary': {
-                light: '#60a5fa', // blue-400
-                DEFAULT: '#3b82f6', // blue-500
-                dark: '#2563eb', // blue-600
-              },
-              'secondary': '#10b981', // emerald-500
-              'background': '#111827', // gray-900
-              'surface': '#1f2937',   // gray-800
-              'on-surface': '#d1d5db', // gray-300
-              'on-surface-muted': '#9ca3af', // gray-400
-            }
-          }
-        }
-      }
-    </script>
-    
-    <!-- Custom Styles -->
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* For custom scrollbar (optional) */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #1f2937; /* gray-800 */
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #3b82f6; /* blue-500 */
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #2563eb; /* blue-600 */
-        }
-    </style>
-
-    <!-- Import Map for React -->
-    <script type="importmap">
-        {
-          "imports": {
-            "react/": "https://esm.sh/react@^19.1.0/",
-            "react": "https://esm.sh/react@^19.1.0",
-            "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
-          }
-        }
-    </script>
+    <meta charset="utf-8">
+    <title>Saivamshi Kottam</title>
+    <meta name="description" content="Saivamshi Kottam - Go Developer Portfolio">
+    <meta name="author" content="Saivamshi Kottam">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/about-photo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/about-photo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/about-photo.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
-<body class="bg-background text-on-surface antialiased">
-    <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
-
-    <section id="certifications" class="py-16 bg-surface">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">Certifications</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- GitHub Foundation Badge -->
-          <div class="bg-background p-6 rounded-lg shadow-lg flex flex-col items-center">
-            <h3 class="text-xl font-semibold mb-4">GitHub Foundations</h3>
-            <div 
-              data-iframe-width="150" 
-              data-iframe-height="270" 
-              data-share-badge-id="77e4f79f-f363-45a7-ac21-f7e406b0f486" 
-              data-share-badge-host="https://www.credly.com">
+<body id="top">
+    <div id="preloader"><div id="loader"></div></div>
+    <div class="s-pagewrap">
+        <div class="circles"><span></span><span></span><span></span><span></span><span></span></div>
+        <header class="s-header">
+            <div class="header-mobile">
+                <span class="mobile-home-link"><a href="index.html">Saivamshi.</a></span>
+                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
             </div>
-            <p class="mt-4 text-on-surface-muted text-center">
-              Validated expertise in GitHub fundamentals and collaborative development workflows.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Add this at the end of the body -->
-    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
-
-   
-
-    
+            <div class="row wide main-nav-wrap">
+                <nav class="column lg-12 main-nav">
+                    <ul>
+                        <li><a href="index.html" class="home-link">Saivamshi.</a></li>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#works" class="smoothscroll">Works</a></li>
+                        <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="s-content">
+            <section id="intro" class="s-intro target-section">
+                <div class="row intro-content wide">
+                    <div class="column">
+                        <div class="text-pretitle with-line">Hello World</div>
+                        <h1 class="text-huge-title">
+                            I am Saivamshi, <br>
+                            a Go Developer <br>
+                            Backend Engineer <br>
+                            and Cloud Enthusiast.
+                        </h1>
+                    </div>
+                    <ul class="intro-social">
+                        <li><a target="_blank" href="https://github.com/vamshi1188">GitHub</a></li>
+                        <li><a target="_blank" href="https://linkedin.com/in/vamshi1188">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <a href="#about" class="intro-scrolldown smoothscroll">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+                </a>
+            </section>
+            <section id="about" class="s-about target-section">
+                <div class="row about-info wide" data-animate-block>
+                    <div class="column lg-6 md-12 about-info__pic-block">
+                        <img style="width:600px; height:700px" src="images/IMG_20250601_160851.jpg" alt="" class="about-info__pic" data-animate-el>
+                    </div>
+                    <div class="column lg-6 md-12">
+                        <div class="about-info__text" >
+                            <h2 class="text-pretitle with-line" data-animate-el>About</h2>
+                            <p class="attention-getter" data-animate-el>
+                                I am an aspiring <b>Software Developer</b> specializing in <b>Go (Golang)</b> and backend systems. Skilled in <b>Docker, Kubernetes, CI/CD</b>, and <b>AWS</b>, I build scalable applications and contribute to AI-based testing tools. I'm passionate about backend development and DevOps, and I’m open to exciting opportunities.
+                            </p>
+                            <a target="_blank" href="docs/resume.pdf" class="btn btn--medium u-fullwidth" data-animate-el>Download CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row about-expertise" data-animate-block>
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle" data-animate-el>Expertise</h2>
+                        <ul class="skills-list h1" data-animate-el>
+                            <li>Go (Golang)</li>
+                            <li>RESTful APIs</li>
+                            <li>Docker, Kubernetes</li>
+                            <li>CI/CD, Git</li>
+                            <li>AWS</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="works" class="s-works target-section">
+                <div class="row works-portfolio">
+                    <div class="column lg-12" data-animate-block>
+                        <h2 class="text-pretitle" data-animate-el>Recent Works</h2>
+                        <p class="h1" data-animate-el>Here are some of my favorite projects. Feel free to check them out.</p>
+                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="https://github.com/vamshi1188/pongmaster">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/ChatGPT Image Jun 18, 2025, 01_04_03 PM.png" alt="">
+                                    </div>
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">Game</div>
+                                        <div class="folio-list__item-title">Go Pong Game</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="https://github.com/vamshi1188/Ecommerce_go/tree/master/Backend_file">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/ChatGPT Image Jun 18, 2025, 01_08_52 PM.png" alt="">
+                                    </div>
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">E-commerce</div>
+                                        <div class="folio-list__item-title">Payment Gateway Backend</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="s-contact target-section">
+                <div class="row contact-top">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle">Get In Touch</h2>
+                        <p class="h1">I love to hear from you. Whether you have a question or just want to connect — shoot me a message.</p>
+                    </div>
+                </div>
+                <div class="row contact-bottom">
+                    <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Reach me at</h3>
+                        <p class="contact-links">
+                            <a href="mailto:vamshigodev@gmail.com" class="mailtoui">vamshigodev@gmail.com</a> <br>
+                            <a href="tel:+917674989311">+91-7674989311</a>
+                        </p>
+                    </div>
+                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Social</h3>
+                        <ul class="contact-social">
+                            <li><a target="_blank" href="https://github.com/vamshi1188">GitHub</a></li>
+                            <li><a target="_blank" href="https://linkedin.com/in/vamshi1188">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="column lg-4 md-12 contact-block">
+                        <a href="mailto:vamshigodev@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hello.</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

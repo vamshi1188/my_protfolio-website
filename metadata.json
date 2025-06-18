@@ -1,5 +1,0 @@
-{
-  "name": "LaTeX Resume Viewer",
-  "description": "A web application to display Saivamshi Kottam's resume, parsed from a LaTeX document and rendered with React and Tailwind CSS.",
-  "requestFramePermissions": []
-}
